@@ -19,6 +19,21 @@ namespace Taller1Integrador
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) {
+
+                lblRuta.Text = openFileDialog1.FileName;
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ui.VentanaGrafico cambioVentana = new ui.VentanaGrafico();
+            cambioVentana.Show();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
 
         }
     }

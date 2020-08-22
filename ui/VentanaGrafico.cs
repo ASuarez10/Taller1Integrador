@@ -12,6 +12,8 @@ namespace Taller1Integrador.ui
 {
     public partial class VentanaGrafico : Form
     {
+
+
         public VentanaGrafico()
         {
             InitializeComponent();
@@ -20,15 +22,15 @@ namespace Taller1Integrador.ui
         private void VentanaGrafico_Load_1(object sender, EventArgs e)
         {
             string[] series = { "Alejandro", "Esteban", "Juan" };
-            int[] puntos = { 20, 50, 70 };
+            int[] puntos = { 20, 50, 70};
 
-            chart1.Titles.Add("Ejemplo");
+            chart2.Titles.Add("Ejemplo");
 
             for (int i = 0; i < series.Length; i++)
             {
 
                 //titulos
-                Series serie = chart1.Series.Add(series[i]);
+                Series serie = chart2.Series.Add(series[i]);
 
                 //cantidades
                 serie.Label = puntos[i].ToString();
