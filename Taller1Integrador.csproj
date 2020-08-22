@@ -47,7 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\Datos.cs" />
+    <Compile Include="model\Departamento.cs" />
+    <Compile Include="model\Datos.cs" />
     <Compile Include="ui\VentanaGrafico.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -25,6 +25,8 @@ namespace Taller1Integrador.src
             cantidades();
         }
 
+        public ArrayList getLista() => Lista;
+
         public void llenarLista() {
 
             lineas = File.ReadAllLines(Ruta);
@@ -42,31 +44,31 @@ namespace Taller1Integrador.src
             
             for (int i = 0; i < Lista.Count; i++) {
 
-                if (Lista[i].Equals("Región Eje Cafetero - Antioquia")) {
+                if (((Departamento)Lista[i]).getRegion().Equals("Región Eje Cafetero - Antioquia")) {
                     antioquia += 1;
                 }
 
-                if (Lista[i].Equals("Región Centro Oriente"))
+                if (((Departamento)Lista[i]).getRegion().Equals("Región Centro Oriente"))
                 {
                     centroOriente += 1;
                 }
 
-                if (Lista[i].Equals("Región Caribe"))
+                if (((Departamento)Lista[i]).getRegion().Equals("Región Caribe"))
                 {
                     caribe += 1;
                 }
 
-                if (Lista[i].Equals("Región Llano"))
+                if (((Departamento)Lista[i]).getRegion().Equals("Región Llano"))
                 {
                     llano += 1;
                 }
 
-                if (Lista[i].Equals("Región Centro Sur"))
+                if (((Departamento)Lista[i]).getRegion().Equals("Región Centro Sur"))
                 {
                     centroSur += 1;
                 }
 
-                if (Lista[i].Equals("Región Pacífico"))
+                if (((Departamento)Lista[i]).getRegion().Equals("Región Pacífico"))
                 {
                     pacifico += 1;
                 }
