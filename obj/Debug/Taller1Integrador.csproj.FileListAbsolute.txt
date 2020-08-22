@@ -1,0 +1,11 @@
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\bin\Debug\Taller1Integrador.exe.config
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\bin\Debug\Taller1Integrador.exe
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\bin\Debug\Taller1Integrador.pdb
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.csprojAssemblyReference.cache
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.Inicio.resources
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.Properties.Resources.resources
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.csproj.GenerateResource.cache
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.exe
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.pdb
+C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.ui.VentanaGrafico.resources
