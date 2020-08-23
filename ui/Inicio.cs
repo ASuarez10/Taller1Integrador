@@ -59,5 +59,43 @@ namespace Taller1Integrador
         {
             
         }
+
+        private void cbbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int indice = cbbDepartamento.SelectedIndex;
+            string dep = cbbDepartamento.Items[indice].ToString();
+
+            if (datos == null)
+            {
+                MessageBox.Show("No has escogido ningún archivo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else {
+
+                int y = 0;
+                if (y != -1) {
+
+                    dtgv.Rows.Clear();
+
+                    ArrayList departamentos = datos.getLista();
+
+                    for (int i = 0; i < departamentos.Count; i++)
+                    {
+
+                        if (((Departamento)departamentos[i]).getNombre().Equals(dep))
+                        {
+
+                        int n = dtgv.Rows.Add();
+
+                        dtgv.Rows[n].Cells[0].Value = ((Departamento)departamentos[i]).getRegion();
+                        dtgv.Rows[n].Cells[1].Value = ((Departamento)departamentos[i]).getCodDep();
+                        dtgv.Rows[n].Cells[2].Value = ((Departamento)departamentos[i]).getNombre();
+                        dtgv.Rows[n].Cells[3].Value = ((Departamento)departamentos[i]).getCodMun();
+                        dtgv.Rows[n].Cells[4].Value = ((Departamento)departamentos[i]).getMunicipio();
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }

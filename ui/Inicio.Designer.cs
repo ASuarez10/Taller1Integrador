@@ -86,39 +86,41 @@
             "Antioquia",
             "Arauca",
             "Atlántico",
-            "Santander",
-            "Sucre",
-            "Casanare",
-            "Norte de Santander",
-            "Cundinamarca",
-            "Vaupés",
-            "Córdoba",
-            "Putumayo",
-            "Nariño",
+            "Bogotá D.C.",
             "Bolívar",
-            "Valler del Cauca",
-            "Tolima",
-            "Caquetá",
             "Boyacá",
-            "Cauca",
-            "Chocó",
             "Caldas",
-            "Magdalena",
+            "Caquetá",
+            "Casanare",
+            "Cauca",
             "Cesar",
-            "Quindío",
-            "Meta",
+            "Chocó",
+            "Córdoba",
+            "Cundinamarca",
+            "Guainía",
+            "Guaviare",
             "Huila",
             "La Guajira",
+            "Magdalena",
+            "Meta",
+            "Nariño",
+            "Norte de Santander",
+            "Putumayo",
+            "Quindío",
             "Risaralda",
-            "Guainía",
-            "Vichada",
-            "Guaviare",
-            "Bogotá D.C."});
+            "Santander",
+            "Sucre",
+            "Tolima",
+            "Valle del Cauca",
+            "Vaupés",
+            "Vichada"});
             this.cbbDepartamento.Location = new System.Drawing.Point(12, 406);
             this.cbbDepartamento.Name = "cbbDepartamento";
             this.cbbDepartamento.Size = new System.Drawing.Size(121, 21);
+            this.cbbDepartamento.Sorted = true;
             this.cbbDepartamento.TabIndex = 3;
             this.cbbDepartamento.Text = "Departamento";
+            this.cbbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cbbDepartamento_SelectedIndexChanged);
             // 
             // openFileDialog1
             // 
