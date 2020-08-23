@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dtgv = new System.Windows.Forms.DataGridView();
             this.botonAbrir = new System.Windows.Forms.Button();
             this.botonGrafico = new System.Windows.Forms.Button();
@@ -40,7 +43,9 @@
             this.departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codMun = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.municipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grafica = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grafica)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgv
@@ -161,11 +166,29 @@
             this.municipio.HeaderText = "Municipio";
             this.municipio.Name = "municipio";
             // 
+            // grafica
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.grafica.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.grafica.Legends.Add(legend1);
+            this.grafica.Location = new System.Drawing.Point(571, 53);
+            this.grafica.Name = "grafica";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.grafica.Series.Add(series1);
+            this.grafica.Size = new System.Drawing.Size(312, 335);
+            this.grafica.TabIndex = 5;
+            this.grafica.Text = "chart1";
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 450);
+            this.Controls.Add(this.grafica);
             this.Controls.Add(this.lblRuta);
             this.Controls.Add(this.cbbDepartamento);
             this.Controls.Add(this.botonGrafico);
@@ -178,6 +201,7 @@
             this.Text = "Datos de Colombia";
             this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grafica)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +221,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn departamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn codMun;
         private System.Windows.Forms.DataGridViewTextBoxColumn municipio;
+        private System.Windows.Forms.DataVisualization.Charting.Chart grafica;
     }
 }
 

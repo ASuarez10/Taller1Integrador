@@ -77,5 +77,12 @@ namespace Taller1Integrador.src
 
         }
 
+        public int getAntioquia() => antioquia;
+        public int getCentroOriente() => centroOriente;
+        public int getCaribe() => caribe;
+        public int getLlano() => llano;
+        public int getCentroSur() => centroSur;
+        public int getPacifico() => pacifico;
+
     }
 }

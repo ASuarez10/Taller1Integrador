@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taller1Integrador.model;
 using Taller1Integrador.src;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Taller1Integrador
 {
@@ -44,6 +45,25 @@ namespace Taller1Integrador
                     dtgv.Rows[n].Cells[3].Value = ((Departamento)departamentos[i]).getCodMun();
                     dtgv.Rows[n].Cells[4].Value = ((Departamento)departamentos[i]).getMunicipio();
 
+                }
+
+                string[] series = { "Región Eje Cafetero - Antioquia", "Región Centro Oriente", "Región Caribe",
+                "Región Llano", "Región Centro Sur", "Región Pacífico"};
+                int[] puntos = { datos.getAntioquia(), datos.getCentroOriente(), datos.getCaribe(), datos.getLlano(),
+                datos.getCentroSur(), datos.getPacifico()};
+
+                grafica.Titles.Add("Municipios por departamento");
+
+                for (int i = 0; i < series.Length; i++)
+                {
+
+                    //titulos
+                    Series serie = grafica.Series.Add(series[i]);
+
+                    //cantidades
+                    serie.Label = puntos[i].ToString();
+
+                    serie.Points.Add(puntos[i]);
                 }
 
             }
