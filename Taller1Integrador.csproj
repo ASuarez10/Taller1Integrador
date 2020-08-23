@@ -49,12 +49,6 @@
   <ItemGroup>
     <Compile Include="model\Departamento.cs" />
     <Compile Include="model\Datos.cs" />
-    <Compile Include="ui\VentanaGrafico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ui\VentanaGrafico.Designer.cs">
-      <DependentUpon>VentanaGrafico.cs</DependentUpon>
-    </Compile>
     <Compile Include="ui\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,9 +57,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ui\VentanaGrafico.resx">
-      <DependentUpon>VentanaGrafico.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ui\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>

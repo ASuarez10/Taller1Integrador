@@ -47,10 +47,10 @@ namespace Taller1Integrador
 
                 }
 
-                string[] series = { "Región Eje Cafetero - Antioquia", "Región Centro Oriente", "Región Caribe",
-                "Región Llano", "Región Centro Sur", "Región Pacífico"};
-                int[] puntos = { datos.getAntioquia(), datos.getCentroOriente(), datos.getCaribe(), datos.getLlano(),
-                datos.getCentroSur(), datos.getPacifico()};
+                string[] series = {"Región Centro Oriente", "Región Caribe", "Región Pacífico", "Región Eje Cafetero - Antioquia", "Región Centro Sur",
+                "Región Llano"};
+                int[] puntos = {datos.getCentroOriente(), datos.getCaribe(), datos.getPacifico(), datos.getAntioquia(), datos.getCentroSur(), datos.getLlano()
+                };
 
                 grafica.Titles.Add("Municipios por departamento");
 
@@ -67,12 +67,6 @@ namespace Taller1Integrador
                 }
 
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ui.VentanaGrafico cambioVentana = new ui.VentanaGrafico();
-            cambioVentana.Show();
         }
 
         private void Inicio_Load(object sender, EventArgs e)

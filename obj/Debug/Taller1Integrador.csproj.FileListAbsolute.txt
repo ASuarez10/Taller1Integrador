@@ -8,4 +8,3 @@ C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Talle
 C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.csproj.CoreCompileInputs.cache
 C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.exe
 C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.pdb
-C:\Users\Alejandro Suarez\Documents\Integrador\Taller1Integrador\obj\Debug\Taller1Integrador.ui.VentanaGrafico.resources

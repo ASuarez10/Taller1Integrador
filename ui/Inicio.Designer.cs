@@ -32,17 +32,16 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dtgv = new System.Windows.Forms.DataGridView();
-            this.botonAbrir = new System.Windows.Forms.Button();
-            this.botonGrafico = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.cbbDepartamento = new System.Windows.Forms.ComboBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lblRuta = new System.Windows.Forms.Label();
             this.region = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codDep = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codMun = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.municipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.botonAbrir = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.cbbDepartamento = new System.Windows.Forms.ComboBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.lblRuta = new System.Windows.Forms.Label();
             this.grafica = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grafica)).BeginInit();
@@ -62,6 +61,31 @@
             this.dtgv.Size = new System.Drawing.Size(543, 335);
             this.dtgv.TabIndex = 0;
             // 
+            // region
+            // 
+            this.region.HeaderText = "Región";
+            this.region.Name = "region";
+            // 
+            // codDep
+            // 
+            this.codDep.HeaderText = "Código DANE del departamento";
+            this.codDep.Name = "codDep";
+            // 
+            // departamento
+            // 
+            this.departamento.HeaderText = "Departamento";
+            this.departamento.Name = "departamento";
+            // 
+            // codMun
+            // 
+            this.codMun.HeaderText = "Código DANE del municipio";
+            this.codMun.Name = "codMun";
+            // 
+            // municipio
+            // 
+            this.municipio.HeaderText = "Municipio";
+            this.municipio.Name = "municipio";
+            // 
             // botonAbrir
             // 
             this.botonAbrir.Location = new System.Drawing.Point(12, 24);
@@ -71,16 +95,6 @@
             this.botonAbrir.Text = "Elegir archivo";
             this.botonAbrir.UseVisualStyleBackColor = true;
             this.botonAbrir.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // botonGrafico
-            // 
-            this.botonGrafico.Location = new System.Drawing.Point(713, 415);
-            this.botonGrafico.Name = "botonGrafico";
-            this.botonGrafico.Size = new System.Drawing.Size(75, 23);
-            this.botonGrafico.TabIndex = 2;
-            this.botonGrafico.Text = "Ver gráfico";
-            this.botonGrafico.UseVisualStyleBackColor = true;
-            this.botonGrafico.Click += new System.EventHandler(this.button2_Click);
             // 
             // cbbDepartamento
             // 
@@ -141,31 +155,6 @@
             this.lblRuta.TabIndex = 4;
             this.lblRuta.Text = "Ruta";
             // 
-            // region
-            // 
-            this.region.HeaderText = "Región";
-            this.region.Name = "region";
-            // 
-            // codDep
-            // 
-            this.codDep.HeaderText = "Código DANE del departamento";
-            this.codDep.Name = "codDep";
-            // 
-            // departamento
-            // 
-            this.departamento.HeaderText = "Departamento";
-            this.departamento.Name = "departamento";
-            // 
-            // codMun
-            // 
-            this.codMun.HeaderText = "Código DANE del municipio";
-            this.codMun.Name = "codMun";
-            // 
-            // municipio
-            // 
-            this.municipio.HeaderText = "Municipio";
-            this.municipio.Name = "municipio";
-            // 
             // grafica
             // 
             chartArea1.Name = "ChartArea1";
@@ -175,9 +164,8 @@
             this.grafica.Location = new System.Drawing.Point(571, 53);
             this.grafica.Name = "grafica";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Series2";
             this.grafica.Series.Add(series1);
             this.grafica.Size = new System.Drawing.Size(312, 335);
             this.grafica.TabIndex = 5;
@@ -191,7 +179,6 @@
             this.Controls.Add(this.grafica);
             this.Controls.Add(this.lblRuta);
             this.Controls.Add(this.cbbDepartamento);
-            this.Controls.Add(this.botonGrafico);
             this.Controls.Add(this.botonAbrir);
             this.Controls.Add(this.dtgv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -211,7 +198,6 @@
 
         private System.Windows.Forms.DataGridView dtgv;
         private System.Windows.Forms.Button botonAbrir;
-        private System.Windows.Forms.Button botonGrafico;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox cbbDepartamento;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
