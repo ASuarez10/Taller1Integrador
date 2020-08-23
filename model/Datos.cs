@@ -35,7 +35,7 @@ namespace Taller1Integrador.src
 
                 var valores = lineas[i].Split(',');
 
-                Lista.Add(new Departamento(valores[0], valores[1], valores[2], valores[3], valores[4]));
+                Lista.Add(new Departamento(valores[0], valores[1], valores[2], valores[3]+valores[4], valores[5]));
             
             }
         }

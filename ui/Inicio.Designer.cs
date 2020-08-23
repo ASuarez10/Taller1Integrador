@@ -80,7 +80,41 @@
             // cbbDepartamento
             // 
             this.cbbDepartamento.FormattingEnabled = true;
-            this.cbbDepartamento.Location = new System.Drawing.Point(60, 417);
+            this.cbbDepartamento.Items.AddRange(new object[] {
+            "\"Archipielago de San Andrés, Providencia y Santa Catalina\"",
+            "Amazonas",
+            "Antioquia",
+            "Arauca",
+            "Atlántico",
+            "Santander",
+            "Sucre",
+            "Casanare",
+            "Norte de Santander",
+            "Cundinamarca",
+            "Vaupés",
+            "Córdoba",
+            "Putumayo",
+            "Nariño",
+            "Bolívar",
+            "Valler del Cauca",
+            "Tolima",
+            "Caquetá",
+            "Boyacá",
+            "Cauca",
+            "Chocó",
+            "Caldas",
+            "Magdalena",
+            "Cesar",
+            "Quindío",
+            "Meta",
+            "Huila",
+            "La Guajira",
+            "Risaralda",
+            "Guainía",
+            "Vichada",
+            "Guaviare",
+            "Bogotá D.C."});
+            this.cbbDepartamento.Location = new System.Drawing.Point(12, 406);
             this.cbbDepartamento.Name = "cbbDepartamento";
             this.cbbDepartamento.Size = new System.Drawing.Size(121, 21);
             this.cbbDepartamento.TabIndex = 3;
@@ -129,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(895, 450);
             this.Controls.Add(this.lblRuta);
             this.Controls.Add(this.cbbDepartamento);
             this.Controls.Add(this.botonGrafico);

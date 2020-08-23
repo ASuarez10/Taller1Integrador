@@ -57,7 +57,7 @@ namespace Taller1Integrador
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
